@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="favicon.icon" type="image/x-icon" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -50,6 +56,159 @@
       </nav>
     </section>
 
+    <section class="main-body">
+      <div class="bg-image">
+        <div class="container">
+          <form class="input-group">
+            <input
+              type="search"
+              class="form-control rounded-pill search-input"
+              placeholder="Find your location..."
+              aria-label="Search"
+              aria-describedby="search-addon"
+            />
+            <button
+              type="button"
+              class="btn btn-outline-primary search-btn rounded-pill"
+              data-mdb-ripple-init
+            >
+              Find
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="weather-Container">
+        <div id="weatherResults" class="weather-results">
+          <div class="container">
+            <div class="row g-0">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                  <div
+                    class="card-header d-flex justify-content-between align-items-center card-header-light"
+                  >
+                    <h6>Wednesday</h6>
+                    <h6>10 January</h6>
+                  </div>
+                  <div class="card-body card-body-light">
+                    <p class="capital-title">Cairo</p>
+
+                    <div
+                      class="temperature-num d-flex justify-content-between align-content-center align-items-center"
+                    >
+                      <div class="display-3 temp">15<sup>o</sup>C</div>
+
+                      <img class="" src="img/176.png" alt="" />
+                    </div>
+                    <p class="custom">clear</p>
+                    <span class="weather-icons">
+                      <img src="img/icon-umberella@2x.png" alt="umberella" />
+                      20%
+                    </span>
+                    <span class="weather-icons">
+                      <img src="img/icon-wind@2x.png" alt="wind" />
+                      18Km/h
+                    </span>
+                    <span class="weather-icons">
+                      <img src="img/icon-compass@2x.png" alt="compass" />
+                      East
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                  <div
+                    class="card-header d-flex justify-content-center align-items-center card-header-dark"
+                  >
+                    <h6>Tuesday</h6>
+                  </div>
+                  <div class="card-body card-body-dark">
+                    <div
+                      class="temperature-num-dark d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <img class="" src="img/113.png" alt="" />
+                      <div class="temp">15<sup>o</sup>C</div>
+                      <div class="temp-next">17.2<sup>o</sup></div>
+                    </div>
+                    <p class="custom text-center">Sunny</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                  <div
+                    class="card-header-lastOne card-header d-flex justify-content-center align-items-center card-header-light"
+                  >
+                    <h6>Friday</h6>
+                  </div>
+                  <div class="card-body card-body-light">
+                    <div
+                      class="temperature-num-dark d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <img class="" src="img/176.png" alt="" />
+                      <div class="temp">15<sup>o</sup>C</div>
+                      <div class="temp-next">1<sup>o</sup></div>
+                    </div>
+                    <p class="custom text-center">Partly cloudy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-8">
+            <div
+              class="main-footer d-flex flex-column justify-content-between align-items-start"
+            >
+              <div
+                class="subscribe-container d-flex flex-column justify-content-start align-items-start w-100"
+              >
+                <form class="input-group">
+                  <input
+                    class="form-control rounded-pill subscribe-input"
+                    placeholder="Enter your email to subscribe..."
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary subscribe-btn rounded-pill"
+                    data-mdb-ripple-init
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+              <p class="copy-right pt-4">
+                Copyright 2014 Company name. Designed by Themezy. All rights
+                reserved
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <div class="social-icons">
+              <div class="facebook-icon social-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="x-icon social-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="google-icon social-icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+              <div class="pinterest-icon social-icon">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
