@@ -87,29 +87,36 @@
                   <div
                     class="card-header d-flex justify-content-between align-items-center card-header-light"
                   >
-                    <h6>Wednesday</h6>
-                    <h6>10 January</h6>
+                    <h6 id="currentDayName"></h6>
+                    <h6 id="currentDayDate"></h6>
                   </div>
                   <div class="card-body card-body-light">
-                    <p class="capital-title">Cairo</p>
+                    <p id="capitalTitle" class="capital-title"></p>
 
                     <div
                       class="temperature-num d-flex justify-content-between align-content-center align-items-center"
                     >
-                      <div class="display-3 temp">15<sup>o</sup>C</div>
-
-                      <img class="" src="img/176.png" alt="" />
+                      <div id="currentTemp" class="display-3 temp">
+                        15<sup>o</sup>C
+                      </div>
+                      <div class="temp-icon">
+                        <img
+                          id="currentDayImgIcon"
+                          class=""
+                          src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
-                    <p class="custom">clear</p>
+                    <p id="currentWeatherStatus" class="custom">clear</p>
                     <span class="weather-icons">
                       <img src="img/icon-umberella@2x.png" alt="umberella" />
                       20%
                     </span>
-                    <span class="weather-icons">
+                    <span id="currentWeatherSpeed" class="weather-icons">
                       <img src="img/icon-wind@2x.png" alt="wind" />
-                      18Km/h
                     </span>
-                    <span class="weather-icons">
+                    <span id="currentWeatherDir" class="weather-icons">
                       <img src="img/icon-compass@2x.png" alt="compass" />
                       East
                     </span>
@@ -121,17 +128,23 @@
                   <div
                     class="card-header d-flex justify-content-center align-items-center card-header-dark"
                   >
-                    <h6>Tuesday</h6>
+                    <h6 id="secondDayName">Tuesday</h6>
                   </div>
                   <div class="card-body card-body-dark">
                     <div
                       class="temperature-num-dark d-flex flex-column justify-content-center align-items-center"
                     >
-                      <img class="" src="img/113.png" alt="" />
-                      <div class="temp">15<sup>o</sup>C</div>
-                      <div class="temp-next">17.2<sup>o</sup></div>
+                      <div id="secondDayImgIcon">
+                        <img src="img/113.png" alt="weather Icon" />
+                      </div>
+
+                      <div id="secondDayMaxTemp" class="temp"></div>
+                      <div id="secondDayMinTemp" class="temp-next"></div>
                     </div>
-                    <p class="custom text-center">Sunny</p>
+                    <p
+                      id="secondDayWeatherStatus"
+                      class="custom text-center"
+                    ></p>
                   </div>
                 </div>
               </div>
@@ -140,17 +153,23 @@
                   <div
                     class="card-header-lastOne card-header d-flex justify-content-center align-items-center card-header-light"
                   >
-                    <h6>Friday</h6>
+                    <h6 id="thirdDayName">Friday</h6>
                   </div>
                   <div class="card-body card-body-light">
                     <div
                       class="temperature-num-dark d-flex flex-column justify-content-center align-items-center"
                     >
-                      <img class="" src="img/176.png" alt="" />
-                      <div class="temp">15<sup>o</sup>C</div>
-                      <div class="temp-next">1<sup>o</sup></div>
+                      <img id="thirdDayImgIcon" src="img/176.png" alt="" />
+                      <div id="thirdDayMaxTemp" class="temp">
+                        <!-- 15<sup>o</sup>C -->
+                      </div>
+                      <div id="thirdDayMinTemp" class="temp-next">
+                        <!-- 1<sup>o</sup> -->
+                      </div>
                     </div>
-                    <p class="custom text-center">Partly cloudy</p>
+                    <p id="thirdDayWeatherStatus" class="custom text-center">
+                      <!-- Partly cloudy -->
+                    </p>
                   </div>
                 </div>
               </div>
