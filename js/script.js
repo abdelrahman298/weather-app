@@ -29,7 +29,7 @@ let thirdDayWeatherStatus = document.getElementById("thirdDayWeatherStatus");
 
 async function getCurrentWeather(searchedCapital = "Cairo") {
   let response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=a720c50ede5a4092bd510014241301&q=${searchedCapital}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=a720c50ede5a4092bd510014241301&q=${searchedCapital}&days=3`
   );
   //data as JSON
   let dataResponse = await response.json();
@@ -119,7 +119,7 @@ ${currentWindSpeed}Km/h`;
 
 async function getFutureWeather(searchedCapital = "Cairo") {
   let response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=a720c50ede5a4092bd510014241301&q=${searchedCapital}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=a720c50ede5a4092bd510014241301&q=${searchedCapital}&days=3`
   );
 
   let dataResponse = await response.json();
