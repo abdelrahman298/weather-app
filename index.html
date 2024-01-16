@@ -61,13 +61,16 @@
         <div class="container">
           <form class="input-group">
             <input
+              id="searchText"
               type="search"
+              oninput="autoSearch()"
               class="form-control rounded-pill search-input"
               placeholder="Find your location..."
               aria-label="Search"
               aria-describedby="search-addon"
             />
             <button
+              id="searchBtn"
               type="button"
               class="btn btn-outline-primary search-btn rounded-pill"
               data-mdb-ripple-init

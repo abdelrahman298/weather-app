@@ -151,9 +151,10 @@
   font-weight: bold;
   color: #ffffff;
 }
-.weather-results .temperature-num img {
+.weather-results .temperature-num .temp-icon img {
   width: 6rem;
 }
+
 .weather-results .temperature-num-dark .temp {
   margin-top: 1rem;
   font-size: 2rem;
@@ -170,6 +171,7 @@
 .weather-icons img {
   width: 1.5rem;
 }
+
 .weather-icons {
   margin-right: 1rem;
 }
