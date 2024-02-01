@@ -15,8 +15,6 @@ Users can also search for the weather in different places around the world.
   - [Displaying Current Weather](#displaying-current-weather)
   - [Viewing Weather Forecast](#viewing-weather-forecast)
 - [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - **Real-time Weather Data:** Fetches up-to-date weather information from an external API.
@@ -54,11 +52,3 @@ Users can also search for the weather in different places around the world.
 
 1. Scroll down to view the weather forecast for the next two days.
 2. Explore forecasted details like temperature trends.
-
-## Contributing
-
-Contributions are welcome! Please follow our [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
